@@ -3,8 +3,10 @@ const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
 const ProfileController = require('./controllers/ProfileConttroller');
 const SessionController = require('./controllers/SessionController');
+const Printer = require('./controllers/Printer');
 const routes = express.Router();
 
+routes.post('/printer', Printer.create); // listar as ongs como array
 
 routes.post('/sessions', SessionController.index); // listar as ongs como array
 
