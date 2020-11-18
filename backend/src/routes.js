@@ -6,7 +6,7 @@ const SessionController = require('./controllers/SessionController');
 const routes = express.Router();
 
 
-routes.get('/sessions', SessionController.index); // listar as ongs como array
+routes.post('/sessions', SessionController.index); // listar as ongs como array
 
 routes.get('/ongs', OngController.index); // listar as ongs como array
 routes.post('/ongs', OngController.create); // adicionar ao banco os dados do insert
