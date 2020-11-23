@@ -6,7 +6,7 @@ const SessionController = require('./controllers/SessionController');
 const Printer = require('./controllers/Printer');
 const routes = express.Router();
 
-routes.post('/printer', Printer.create); // listar as ongs como array
+routes.get('/printer', Printer.create); // listar as ongs como array
 
 routes.post('/sessions', SessionController.index); // listar as ongs como array
 

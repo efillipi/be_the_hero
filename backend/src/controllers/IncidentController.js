@@ -28,7 +28,9 @@ module.exports = {
 
     async create(request,response){
         const { title,description,value} = request.body; //criar incidente com base na ong
+        
         request.headers;
+        
         const ong_id = request.headers.authorization; 
         const [id] = await connection('incidents').insert(
             {   
@@ -37,6 +39,7 @@ module.exports = {
                 value,
                 ong_id,
             })
+            
         return response.json({id});
     },
 
