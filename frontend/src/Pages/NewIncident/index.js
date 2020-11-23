@@ -31,7 +31,6 @@ export default function NewIncident() {
           Authorization: ongId, // passando para a api a autorizacao com base no header
         }
       })
-      alert (`Caso cadastrado: ${response.data.id}`);
       history.push('/profile');
       
     } catch (error) {
