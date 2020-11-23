@@ -47,7 +47,7 @@ export default function NewIncident() {
           <p> Descreva o caso detalhadamente para encontrar um herói para resolver isso. </p>
           <Link className="back-link" to="/profile">
             <FiArrowLeft size={16} color="#e02041" />
-            Voltar para Home
+            Voltar
           </Link>
         </section>
         <form onSubmit={handleNewIncident} >
