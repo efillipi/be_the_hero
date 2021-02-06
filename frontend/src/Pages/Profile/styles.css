@@ -77,7 +77,7 @@
 }
 
 .profile-container ul li p + strong {
-  
+  margin-top: 32px;
 }
 
 .profile-container ul li p {

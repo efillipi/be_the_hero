@@ -61,7 +61,7 @@ export default function Profile() {
             
 
             <li key={incident.id}>
-              <img src={logoImg} alt="Be The Hero" />
+              
               <strong> CASO: </strong>
               <p> {incident.title} </p>
       

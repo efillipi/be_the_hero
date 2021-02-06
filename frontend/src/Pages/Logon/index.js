@@ -35,20 +35,21 @@ export default function Logon() {
       <section className="form">
         <img src={logoImg} alt="Be The Hero" />
 
-      <form onSubmit={handleLogin}>
-        <h1> Faça seu Logon </h1>
-        <input 
-          required
-          placeholder="Sua ID" 
-          value={id}
-          onChange={e => setid(e.target.value)} 
-        />
-        <button className="button" type="submit"> Entrar </button>
-        <Link className="back-link" to="/register">
-          <FiLogIn size={16} color="#e02041" />
-          Não tenho cadastro
-        </Link>
-      </form>
+        <form onSubmit={handleLogin}>
+          <h1> Faça seu Logon </h1>
+          <input 
+            required
+            placeholder="Sua ID" 
+            value={id}
+            onChange={e => setid(e.target.value)} 
+          />
+          <button className="button" type="submit"> Entrar </button>
+          <Link className="back-link" to="/register">
+            <FiLogIn size={16} color="#e02041" />
+            Não tenho cadastro
+          </Link>
+        </form>
+        
       </section>
       <img src={heroesImg} alt="Heroes" />
     </div>

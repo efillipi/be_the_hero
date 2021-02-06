@@ -54,28 +54,34 @@ export default function Register() {
         </section>
         {redirect && <Redirect to="/" />}
         <form onSubmit={handleRegister} onReset={handleReset} >
-          <input 
+          <input
+            required
             placeholder="Nome da ONG"
             value={name}
             onChange={e => setname(e.target.value)}
           />
-          <input type="email" 
+          <input 
+            required
+            type="email" 
             placeholder="Email"  
             value={email} 
             onChange={e => setemail(e.target.value)}
           />
           <input 
+            required
             placeholder="WhatsApp" 
             value={whatsapp} 
             onChange={e => setwhatsapp(e.target.value)}
           />
           <div className="input-group">
             <input 
+              required
               placeholder="Cidade"  
               value={city} 
               onChange={e => setcity(e.target.value)}
             />
             <input 
+              required
               placeholder="UF"  style={{ width :80 }}
               value={uf} 
               onChange={e => setuf(e.target.value)}
