@@ -52,14 +52,17 @@ export default function NewIncident() {
         </section>
         <form onSubmit={handleNewIncident} >
           <input placeholder="Titulo do Caso"  
+          required
           value={title}
           onChange={e=> setTitle(e.target.value)}
           />
           <textarea placeholder="Descrição" 
+          required
           value={description}
           onChange={e=> setDescription(e.target.value)}
           />
           <input placeholder="Valor em Reais"  
+          required
           value={value}
           onChange={e=> setValue(e.target.value)}
           />

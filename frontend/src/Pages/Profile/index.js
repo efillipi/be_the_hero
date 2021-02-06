@@ -58,8 +58,10 @@ export default function Profile() {
       <h1> Casos Cadastrados </h1>
       <ul>
           {incidents.map(incident =>(
+            
 
             <li key={incident.id}>
+              <img src={logoImg} alt="Be The Hero" />
               <strong> CASO: </strong>
               <p> {incident.title} </p>
       
